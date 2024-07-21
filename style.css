@@ -70,6 +70,17 @@ article div {
   width: 100%;
 }
 
+.contact-info ol {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-info ol li {
+   display: inline-block;
+  margin-right: 20px;
+}
+
 .collection {
   display: flex;
   align-items: center;
