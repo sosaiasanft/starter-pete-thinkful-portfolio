@@ -108,7 +108,10 @@ img {
 
 /* Footer */
 footer {
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
 /* Other page elements */
