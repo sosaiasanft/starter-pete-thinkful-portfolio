@@ -1,35 +1,57 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
-
+/* Global styles */
 body {
-  background-color: #eae2b7;
-  color: #003049;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
+  background-color: #f0ece2;
+  color: #2e2e2e;
+  font-family: 'Source Sans Pro', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Headings */
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Header */
+/* Header styles */
 header {
-  display: flex;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  padding: 20px 0;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
-/* Mine */
-.about-sect {
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin: 0;
+  font-size: 36px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f06292;
+}
+
+/* About section styles */
+#about {
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+.about-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .about-header {
@@ -38,166 +60,105 @@ header {
 }
 
 .about-title {
-  text-align: center;
-  align-items: center;
-  margin-top: -10px;
+  margin-left: 20px;
 }
 
 .about-description {
-  text-align: left;
-  margin-left: 275px;
-  margin-top: -170px;
+  text-align: center;
 }
 
 .pete-background {
   margin-top: 20px;
-  text-align: left;
 }
 
-/* Containers */
-div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
-}
-
-article {
+/* Portfolio section styles */
+#portfolio {
+  background-color: #ffffff;
   padding: 50px 0;
-}
-
-article div {
-  text-align: center;
-  width: 100%;
 }
 
 .collection {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
 }
 
-/* Paragraphs */
-p {
-  line-height: 1.5;
-  font-size: 14px;
+.portfolio-item {
+  text-align: center;
+  max-width: 300px;
 }
 
-/* Links */
-a:link {
-  color: #d62828;
-}
-
-a:hover {
-  color: #f77f00;
-}
-
-nav a {
-  padding-left: 20px;
-}
-
-/* Images */
-img {
+.portfolio-item img {
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
-.image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
+.portfolio-item-description {
+  text-align: left;
 }
 
-.contact {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* Contact section styles */
+#contact {
+  background-color: #ffffff;
+  padding: 50px 0;
 }
 
-/* Footer */
+#contact p {
+  text-align: center;
+}
+
+#contact ol {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#contact ol li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#contact ol li a {
+  color: #2e2e2e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact ol li a:hover {
+  color: #f06292;
+}
+
+/* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-/* Other page elements */
-hr {
-  border: 1px solid black;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #f06292;
-}
-
-section {
-    padding: 60px 0;
-}
-
-section h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Media queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+  
+  .collection {
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    text-align: center;
-}
-
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.about-content p {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
+  }
+  
+  .portfolio-item {
+    max-width: 100%;
+  }
 }
