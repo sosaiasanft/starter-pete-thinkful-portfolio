@@ -106,6 +106,13 @@ img {
   border-radius: 50%;
 }
 
+.contact {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* Footer */
 footer {
     background-color: #333;
