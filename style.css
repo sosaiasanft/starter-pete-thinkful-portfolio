@@ -18,42 +18,18 @@ h3 {
 
 /* Header */
 header {
-  display: flex;
   text-align: center;
+}
+
+.header-container{
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Mine */
-.about-sect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+nav{
+  margin-left: 15px;
 }
-
-.about-header {
-  display: flex;
-  align-items: center;
-}
-
-.about-title {
-  text-align: center;
-  align-items: center;
-  margin-top: -10px;
-}
-
-.about-description {
-  text-align: left;
-  margin-left: 275px;
-  margin-top: -170px;
-}
-
-.pete-background {
-  margin-top: 20px;
-  text-align: left;
-}
-
 /* Containers */
 div {
   background-color: #eae2b7;
@@ -70,28 +46,26 @@ article div {
   width: 100%;
 }
 
-.contact-info ol {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.contact-info ol li {
-   display: inline-block;
-  margin-right: 20px;
-}
-
-.collection {
+.about-redo{
   display: flex;
-  align-items: center;
 }
-
+.portfolio-container{
+  display: flex;
+  
+}
+.art-card{
+  display: flex;
+  flex-direction: column;
+  
+}
 /* Paragraphs */
 p {
   line-height: 1.5;
-  font-size: 14px;
 }
-
+.about-section {
+  width: 100%;
+  text-align: left;
+}
 /* Links */
 a:link {
   color: #d62828;
